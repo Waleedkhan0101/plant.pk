@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant.pk</title>
+    <!-- bootstrp css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<style>
+      .text-area{
+font-size: 70px;
+font-family: roboto;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+.text-area span{
+color: #06f51a;
+opacity: 0;
+transform: translate(0,100px) rotate(360deg) scale(0);
+animation: animate 5s forwards;
+
+
+}
+.text-area span{
+display: inline-block;
+}
+.text-area span:nth-of-type(2) {
+animation-delay: .2s;
+}
+.text-area span:nth-of-type(3) {
+animation-delay: .3s;
+}
+.text-area span:nth-of-type(4) {
+animation-delay: .4s;
+}
+.text-area span:nth-of-type(5) {
+animation-delay: .5s;
+}
+.text-area span:nth-of-type(6) {
+animation-delay: .6s;
+}
+.text-area span:nth-of-type(7) {
+animation-delay: .7s;
+}
+.text-area span:nth-of-type(8) {
+animation-delay: .8s;
+}
+@keyframes animate{
+30%{
+  transform: translate(0 -50px) rotate(360deg) scale(1);
+}
+
+60%{
+  transform: translate(0 -20px) rotate(0deg) scale(8);
+}
+100%{
+  transform: translate(0 ) rotate(0deg) scale(1);
+  opacity: 1;
+}
+}
+
+.active-filter-btn{
+    background-color: black!important;
+    color: #fff ;
+    border-color: black!important;
+}
+
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+
+.collection-img span{
+    top:20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.top{
+    margin-top:200px;
+    margin-bottom: 100px;
+}
+
+</style>
+</head>
+<body>
+
+    <h3 class="bg-success text-white text-center">Plant.pk</h3>
+    <nav class="navbar navbar-expand-lg navbar-white  bg-white " style="border: 1px solid black; top: -10px; box-shadow: 5px 5px 10px green;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logonav.png" alt="" style="top: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="INDEX.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ABOUT.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="SHOP.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="CATALOGUE.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="CONTACT.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="feedback.html">FeedBack</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+            <a href="" class="btn btn-success">Search</a>
+          </form>
+        </div>
+
+
+</nav>
+
+<div class="container "   >
+    <div class="banner-text " >
+      <div class="text-area text-center py-5" style="margin-top: 100px;">
+        <span>S</span>
+        <span>H</span>
+        <span>o</span>
+        <span>P</span>&nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+        
+        
+      </div>
+
+      
+    
+    </div>
+  </div>
+
+  
+<section id="collection" class="py-5">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="position-relative d-inline-block ">New Collection</h2>
+        </div>
+  
+        <div class="row  ">
+            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type="button" class="btn m-2 text-white active-filter-btn " data-filter="*">All</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".feat">Top sells</button>
+                <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrival</button>
+            </div>
+  
+            <div class="collection-list mt-4 mt-xl-4 row gx-0 gy-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new ">
+                    <div class="collection-img position-relative">
+                        <img src="shop9.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">gray shirt</p>
+                        <span class="fw-bold">RS 500</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                    <div class="collection-img position-relative">
+                        <img src="shop1.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">new fashion the boys </p>
+                        <span class="fw-bold">RS  300</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 feat">
+                    <div class="collection-img position-relative">
+                        <img src="shop2.jpg" alt="" class="w-100 "  style="width: 250px; height: 200px; " >
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">new collection</p>
+                        <span class="fw-bold">RS 400</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+                    <div class="collection-img position-relative">
+                        <img src="shop3.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">new collection</p>
+                        <span class="fw-bold">RS 600</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                    <div class="collection-img position-relative">
+                        <img src="shop4.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">summar collection</p>
+                        <span class="fw-bold">RS 999</span>
+                        <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+                    <div class="collection-img position-relative">
+                        <img src="shop5.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">man style shirt</p>
+                        <span class="fw-bold">RS 599</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 feat">
+                    <div class="collection-img position-relative">
+                        <img src="shop6.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">gray shirt black traozar and shoe</p>
+                        <span class="fw-bold">RS 1199</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                    <div class="collection-img position-relative">
+                        <img src="shop2.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">new style back for wings</p>
+                        <span class="fw-bold">RS 399</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+  
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                    <div class="collection-img position-relative">
+                        <img src="shop7.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                        <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-capitalize my-1">new fashion the boys </p>
+                        <span class="fw-bold">RS  300</span>
+                    </div>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-4 new ">
+                  <div class="collection-img position-relative">
+                      <img src="rose.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">Red rose</p>
+                      <span class="fw-bold">RS 1199</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                  <div class="collection-img position-relative">
+                      <img src="orchide.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">orchide </p>
+                      <span class="fw-bold">RS  1200</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 feat">
+                  <div class="collection-img position-relative">
+                      <img src="white rose.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">White rose</p>
+                      <span class="fw-bold">RS 1700</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+
+
+              
+
+              
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+                <div class="collection-img position-relative">
+                    <img src="sun flower.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                    <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Sun flower</p>
+                    <span class="fw-bold">RS 1199</span>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+            </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 best">
+                  <div class="collection-img position-relative">
+                      <img src="peoney.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">peoney</p>
+                      <span class="fw-bold">RS 1300</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 feat">
+                  <div class="collection-img position-relative">
+                      <img src="Iris-sibirica.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">Iris-sibirica</p>
+                      <span class="fw-bold">RS 5800</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                <div class="collection-img position-relative">
+                    <img src="daffodil.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                    <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">daffodil</p>
+                    <span class="fw-bold">RS 5800</span>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+            </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                  <div class="collection-img position-relative">
+                      <img src="dhalia.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">dhalia</p>
+                      <span class="fw-bold">RS 698</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-4 new">
+                  <div class="collection-img position-relative">
+                      <img src="Tulip.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">Tulip </p>
+                      <span class="fw-bold">RS 987 </span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-3 p-4 new">
+                  <div class="collection-img position-relative">
+                      <img src="snake plant.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                      <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                  </div>
+                  <div class="text-center">
+                      <div class="rating mt-3">
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                          <span class="text-primary"><i class="fas fa-star"></i></span>
+                      </div>
+                      <p class="text-capitalize my-1">snake plant </p>
+                      <span class="fw-bold">RS  699</span>
+                      <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                  </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-6 col-xl-3 p-4 new">
+                <div class="collection-img position-relative">
+                    <img src="chameli.jpg" alt="" class="w-100" style="width: 250px; height: 200px;">
+                    <span class="position-absolute bg-danger text-white d-flex align-item-center justify-content-center">sale</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">chameli </p>
+                    <span class="fw-bold">RS  870</span>
+                    <center><a href="" class="btn btn-outline-success ">Cart</a></center>
+                </div>
+            </div>
+
+
+          </div>
+      </div>
+
+  </div>
+
+</section>
+    
+
+                
+                
+  <!-- collection -->
+
+<!-- footer -->
+
+<div class="" style="border: 2px solid rgb(214, 181, 120); box-shadow: 5px 5px 10px green;">
+
+<h3 class="text-center ">New Letter</h3>
+
+  <!-- <input class="form-control mx-auto " type="Email" placeholder="Search" aria-label="Search" style="width: 500px;">
+  <center><a href="" class="btn btn-success mx-auto" >Submit</a></center> -->
+  <section id="subscribe">
+    <div class="container">
+      <div class="subscribe text-center">
+     
+        <p>If you want our new amazing web so give your feedback</p>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Email Id">
+          <div class="input-group-append" >
+           <a href=""> <button type="submit" class="input-group-text btn btn-outline-success">Subscribe</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+    
+<footer class="text-center text-lg-start  text-muted fotclr ">
+  <section class="fotclr">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-3  ">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa fa-star me-3"></i><img src="logonav.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star me-3"></i>
+          </h6>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui reiciendis, dolore unde esse sed cupiditate fugit natus sapiente quidem dolorum. Perferendis dolore id possimus obcaecati iste error iure corrupti.
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-3 ">
+
+          <h6 class="text-uppercase fw-bold mb-4  hed ">
+            Site Map
+          </h6>
+          <p>
+            <a href="INDEX.html" class="text btn ">Home</a>
+          </p>
+          <p>
+            <a href="ABOUT.html" class="text btn ">About Us</a>
+          </p>
+          <p>
+            <a href="SHOP.html" class="text btn ">Shop</a>
+          </p>
+          <p>
+            <a href="CATALOGUE.html" class="text btn ">Catalogue</a>
+          </p>
+          <p>
+            <a href="CONTACT.html" class="text btn ">Contact Us</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4  mt-3 ">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            Social Networks
+          </h6>
+          <p>
+            <a href="#!" class="text btn "><i class="bi bi-facebook" ></i>Facebook </a>
+          </p>
+          <p>
+            <a href="#!" class="text btn "> <i class="bi bi-instagram" ></i>Instagram </a>
+          </p>
+          <p>
+            <a href="#!" class="text btn "><i class="bi bi-google" ></i>Google </a>
+          </p>
+          <p>
+            <a href="#!" class="text btn "> <i class="bi bi-youtube" ></i>Youtube</a>
+          </p>
+          <p>
+            <a href="#!" class="text btn "> <i class="bi bi-twitter" ></i>Twitter</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-3 ">
+
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>Karachi,Pakistan.</p><br>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p><br>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p><br>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p><br>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.09);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="#">www.Plant.pk</a>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+      <!-- custom jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <!-- isotops cdn -->
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<!-- cutom js -->
+<script src="index.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
